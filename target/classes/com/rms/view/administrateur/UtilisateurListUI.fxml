@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.administrateur.UtilisateurListUIController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutX="37.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="750.0">
+         <items>
+            <AnchorPane id="userTable" minHeight="0.0" minWidth="0.0">
+               <children>
+                  <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="22.0" layoutX="2.0" layoutY="7.0" prefHeight="27.0" prefWidth="373.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0">
+                     <children>
+                        <Label text="Recherche" />
+                        <TextField fx:id="searchTextField">
+                           <font>
+                              <Font size="12.0" />
+                           </font></TextField>
+                     </children>
+                  </FlowPane>
+                  <TableView fx:id="userTable" layoutX="11.0" layoutY="46.0" prefHeight="338.0" prefWidth="344.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="46.0">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="nomColumn" prefWidth="75.0" text="Nom" />
+                        <TableColumn fx:id="prenomColumn" prefWidth="75.0" text="Prenom" />
+                     </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="390.0" style="-fx-background-color: #D6D6D6;">
+               <children>
+                  <Label layoutY="1.0" prefHeight="35.0" text="Informaton utilisateur" textFill="#1f1cdd" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Times New Roman Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="5.0" layoutY="50.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0">
+                     <children>
+                        <Label text="Nom" GridPane.rowIndex="1" />
+                        <Label id="nomLabel" fx:id="nomLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Prenom" GridPane.rowIndex="2" />
+                        <Label id="prenomLabel" fx:id="prenomLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="Email" GridPane.rowIndex="3" />
+                        <Label id="emailLabel" fx:id="emailLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label text="Telephone" GridPane.rowIndex="4" />
+                        <Label text="Login" GridPane.rowIndex="5" />
+                        <Label text="Password" GridPane.rowIndex="6" />
+                        <Label text="Role" GridPane.rowIndex="7" />
+                        <Label id="telephoneLabel" fx:id="telephoneLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label id="loginLabel" fx:id="loginLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label id="passwordLabel" fx:id="passwordLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                        <Label id="roleLabel" fx:id="roleLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                        <Label prefHeight="27.0" prefWidth="160.0" text="Identifiant" />
+                        <Label fx:id="idLabel" text="Label" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="146.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="10.0" prefWidth="240.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <FlowPane id="boutonGroup" alignment="CENTER_RIGHT" hgap="10.0" layoutX="5.0" layoutY="339.0" prefHeight="55.0" prefWidth="359.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                     <children>
+                        <Button alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleOnClickAdd" style="-fx-background-color: #17C7E8; -fx-label-padding: 8;" text="Nouveau" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleOnClickEdit" style="-fx-background-color: #EBD932; -fx-label-padding: 8;" text="Modifier" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                        <Button id="supprimerButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleOnClickDelete" style="-fx-background-color: #E82E7E; -fx-label-padding: 8;" text="Supprimer" textFill="WHITE">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

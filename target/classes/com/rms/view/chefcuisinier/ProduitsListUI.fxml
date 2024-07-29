@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="914.0" styleClass="listProduit" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.chefcuisinier.ProduitsListsUIController">
+   <children>
+      <HBox layoutX="635.0" layoutY="374.0" spacing="4.0" />
+      <TableView fx:id="tableView" layoutX="53.0" layoutY="128.0" prefHeight="251.0" prefWidth="601.0">
+         <columns>
+            <TableColumn fx:id="idcolumn" maxWidth="1.7976931348623157E308" prefWidth="62.0" text="ID" />
+            <TableColumn fx:id="intitulecolumn" maxWidth="1.7976931348623157E308" prefWidth="95.0" text="Intitule" />
+            <TableColumn fx:id="prixcolumn" maxWidth="1.7976931348623157E308" prefWidth="95.0" text="Prix" />
+            <TableColumn fx:id="Stockcolumn" maxWidth="1.7976931348623157E308" prefWidth="95.0" text="Stock" />
+            <TableColumn fx:id="categoriecolumn" maxWidth="1.7976931348623157E308" prefWidth="132.0" text="Categorie" />
+            <TableColumn fx:id="descriptioncolumn" maxWidth="1.7976931348623157E308" prefWidth="162.0" text="Descriptiom" />
+         </columns>
+         <effect>
+            <Glow level="0.1" />
+         </effect>
+      </TableView>
+      <FlowPane columnHalignment="CENTER" hgap="20.0" layoutX="100.0" layoutY="81.0" prefHeight="30.0" prefWidth="437.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="152.0" text="Recherche" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+            <TextField fx:id="searchTextField" prefHeight="30.0" prefWidth="257.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+         </children>
+      </FlowPane>
+      <Label alignment="TOP_LEFT" layoutX="265.0" layoutY="21.0" prefHeight="40.0" prefWidth="448.0" text="Listes des produits disponibles" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageProduit" fitHeight="169.0" fitWidth="224.0" layoutX="666.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="696.0" layoutY="136.0" prefHeight="35.0" prefWidth="224.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="808.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleOnClickDelete" prefHeight="30.0" prefWidth="74.0" text="Supprimer">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-danger" />
+         </styleClass>
+      </Button>
+      <Button layoutX="738.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleOnClickEdit" text="Modifier" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn" />
+            <String fx:value="btn-warning" />
+         </styleClass>
+      </Button>
+      <Button layoutX="666.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleOnClickNouveau" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <styleClass>
+            <String fx:value="btn-primary" />
+            <String fx:value="btn" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

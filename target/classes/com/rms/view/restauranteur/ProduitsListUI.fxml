@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.chefcuisinier.ProduitsListsUIController">
+   <children>
+      <HBox layoutX="606.0" layoutY="395.0" spacing="20.0">
+         <children>
+            <Button layoutX="622.0" layoutY="236.0" mnemonicParsing="false" onAction="#handleOnClickNouveau" text="Ajouter" />
+            <Button layoutX="622.0" layoutY="296.0" mnemonicParsing="false" onAction="#handleOnClickEdit" text="Modifier" />
+            <Button layoutX="622.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleOnClickDelete" text="Supprimer" />
+         </children>
+      </HBox>
+      <FlowPane alignment="CENTER_LEFT" hgap="50.0" layoutX="79.0" layoutY="420.0" prefHeight="27.0" prefWidth="156.0" />
+      <TableView fx:id="tableView" layoutX="62.0" layoutY="112.0" prefHeight="325.0" prefWidth="516.0">
+         <columns>
+            <TableColumn fx:id="idcolumn" maxWidth="1.7976931348623157E308" prefWidth="82.0" text="ID" />
+            <TableColumn fx:id="intitulecolumn" maxWidth="1.7976931348623157E308" prefWidth="136.0" text="Intitule" />
+            <TableColumn fx:id="descriptioncolumn" maxWidth="1.7976931348623157E308" prefWidth="152.0" text="Description" />
+            <TableColumn fx:id="prixcolumn" maxWidth="1.7976931348623157E308" prefWidth="93.0" text="Prix" />
+         </columns>
+         <effect>
+            <Glow level="0.1" />
+         </effect>
+      </TableView>
+      <FlowPane columnHalignment="CENTER" hgap="20.0" layoutX="62.0" layoutY="53.0" prefHeight="17.0" prefWidth="400.0">
+         <children>
+            <Label text="Recherche" />
+            <TextField fx:id="searchTextField" prefHeight="26.0" prefWidth="224.0" />
+         </children>
+      </FlowPane>
+      <Label alignment="TOP_LEFT" layoutX="52.0" layoutY="5.0" prefHeight="35.0" prefWidth="242.0" text="Listes des produits" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageProduit" fitHeight="260.0" fitWidth="260.0" layoutX="606.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="621.0" layoutY="72.0" prefHeight="35.0" prefWidth="224.0" text="Image du produit">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon layoutX="31.0" layoutY="342.0" wrappingWidth="20.666656494140625" />
+   </children>
+</AnchorPane>

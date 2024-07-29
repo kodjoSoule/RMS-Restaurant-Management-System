@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="946.0" styleClass="bg9" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.restauranteur.FormCommandeUIController">
+   <children>
+      <HBox layoutX="387.0" layoutY="440.0" prefHeight="39.0" prefWidth="202.0" spacing="26.0">
+         <children>
+            <Button fx:id="validerButton" layoutX="323.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleValider" styleClass="btn-success" text="Valider" textFill="WHITE" AnchorPane.bottomAnchor="23.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button layoutX="425.0" layoutY="395.0" mnemonicParsing="false" onAction="#handleAnnuler" prefHeight="19.0" prefWidth="92.0" styleClass="bg-danger" text="Annuler" textFill="WHITE" AnchorPane.bottomAnchor="23.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <GridPane layoutX="127.0" layoutY="83.0" prefHeight="300.0" prefWidth="653.0" vgap="25.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <Label text="Produits" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label text="Quantite" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <ComboBox fx:id="produitComboBox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" />
+            <TextField fx:id="quantiteField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Prix " textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label fx:id="prixLabel" prefHeight="26.0" prefWidth="185.0" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Label>
+            <Label text="Nom Client:" textFill="WHITE" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="nomClientField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Statut:" textFill="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label text="Date" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="emailClientField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <DatePicker fx:id="dateCommandeField" editable="false" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Email Client" textFill="WHITE" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label text="Addresse Client" textFill="WHITE" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="adresseClientField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="Prenom Client:" textFill="WHITE" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="prenomClientField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ComboBox fx:id="statutCombox" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Telephone " textFill="WHITE" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="telephoneClientField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="190.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="557.0" minWidth="10.0" prefWidth="557.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="282.0" layoutY="8.0" prefHeight="34.0" prefWidth="415.0" styleClass="bg-success" text="Formulaire commande" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

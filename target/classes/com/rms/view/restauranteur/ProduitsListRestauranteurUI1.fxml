@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="824.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.restauranteur.ProduitsListsRestauranteurUIController">
+   <children>
+      <HBox layoutX="606.0" layoutY="395.0" spacing="20.0" />
+      <FlowPane alignment="CENTER_LEFT" hgap="50.0" layoutX="79.0" layoutY="420.0" prefHeight="27.0" prefWidth="156.0" />
+      <TableView fx:id="tableView" layoutX="44.0" layoutY="113.0" prefHeight="279.0" prefWidth="547.0">
+         <columns>
+            <TableColumn fx:id="idcolumn" maxWidth="1.7976931348623157E308" prefWidth="71.0" text="ID" />
+            <TableColumn fx:id="intitulecolumn" maxWidth="1.7976931348623157E308" prefWidth="117.0" text="Intitule" />
+            <TableColumn fx:id="descriptioncolumn" maxWidth="1.7976931348623157E308" prefWidth="124.0" text="Description" />
+            <TableColumn fx:id="prixcolumn" maxWidth="1.7976931348623157E308" prefWidth="94.0" text="Prix" />
+            <TableColumn fx:id="categoriecolumn" maxWidth="1.7976931348623157E308" prefWidth="98.0" text="Categrorie" />
+         </columns>
+         <effect>
+            <Glow level="0.1" />
+         </effect>
+      </TableView>
+      <FlowPane columnHalignment="CENTER" hgap="20.0" layoutX="44.0" layoutY="62.0" prefHeight="17.0" prefWidth="400.0">
+         <children>
+            <Label text="Recherche" />
+            <TextField fx:id="searchTextField" prefHeight="26.0" prefWidth="224.0" />
+         </children>
+      </FlowPane>
+      <Label alignment="TOP_LEFT" layoutX="44.0" layoutY="14.0" prefHeight="35.0" prefWidth="242.0" text="Listes des produits" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="imageProduit" fitHeight="200.0" fitWidth="200.0" layoutX="606.0" layoutY="153.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="606.0" layoutY="113.0" prefHeight="35.0" prefWidth="224.0" text="Image du produit">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="640.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleOnClickCommander" text="Commander" />
+   </children>
+</AnchorPane>

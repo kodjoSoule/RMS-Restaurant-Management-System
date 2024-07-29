@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane prefHeight="444.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.restauranteur.PaiementUIController">
+   <children>
+      <GridPane layoutX="38.0" layoutY="64.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="653.0" style="-fx-background-color: #f2f2f2;">
+         <children>
+            <Label prefHeight="46.0" prefWidth="148.0" text="Commande" textAlignment="CENTER" GridPane.columnIndex="0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="idCommandeLabel" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label prefHeight="39.0" prefWidth="127.0" text="Total" GridPane.columnIndex="0" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalLabel" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label prefHeight="53.0" prefWidth="226.0" text="Montant Recue" GridPane.columnIndex="0" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="montantRecueField" style="-fx-background-color: white; -fx-border-color: #ccc; -fx-border-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></TextField>
+            <Label prefHeight="53.0" prefWidth="226.0" text="Montant à Rendre" GridPane.columnIndex="0" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="montantARendreLabel" maxWidth="1.7976931348623157E308" textFill="#00d4ff" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font></Label>
+            <Label prefHeight="46.0" text="Date Commande" textAlignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="46.0" text="Date Paiement" textAlignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="datePaiementLabel" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateCommandeLabel" maxWidth="1.7976931348623157E308" prefHeight="27.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label prefHeight="46.0" prefWidth="148.0" text="Client " textAlignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="nomCompletClientLabel" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="223.0" layoutY="1.0" prefHeight="53.0" prefWidth="363.0" text="Fiche de Paiement" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="payerButton" layoutX="223.0" layoutY="379.0" onAction="#handlePayer" prefHeight="40.0" prefWidth="113.0" style="-fx-background-color: #32cd32; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 20px;" text="Payer">
+      </Button>
+      <Button fx:id="annulerButton" layoutX="364.0" layoutY="377.0" onAction="#handleAnnuler" prefHeight="40.0" prefWidth="103.0" style="-fx-background-color: #ff0000; -fx-text-fill: white; -fx-font-weight: bold; -fx-font-size: 20px;" text="Annuler">
+      </Button>
+      <Label fx:id="erreurLabel" alignment="CENTER" layoutX="85.0" layoutY="324.0" maxWidth="1.7976931348623157E308" prefHeight="30.0" prefWidth="558.0" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

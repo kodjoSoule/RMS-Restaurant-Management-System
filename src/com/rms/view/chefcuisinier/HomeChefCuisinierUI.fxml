@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="homeChef" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="458.0" prefWidth="958.0" styleClass="chef" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rms.view.chefcuisinier.HomeChefCuisinierUIController">
+   <children>
+      <VBox alignment="CENTER" layoutX="39.0" layoutY="83.0" prefHeight="183.0" prefWidth="506.0" style="-fx-background-color: #F6F6F6;" styleClass="TestRed">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="142.0" prefHeight="144.0" prefWidth="425.0" text="Bienvenue dans ">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="142.0" prefHeight="139.0" prefWidth="425.0" text="la section">
+               <font>
+                  <Font name="System Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="139.0" prefWidth="425.0" text="Chef Cuisinier">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="labelUtilisateur" layoutX="611.0" layoutY="352.0" prefHeight="39.0" prefWidth="317.0" text="Utilisateur">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="612.0" layoutY="398.0" mnemonicParsing="false" onAction="#disconnect" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: RED;" text="Deconnecter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="79.0" layoutY="320.0" mnemonicParsing="false" onAction="#cancel" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: RED;" text="Quitter" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

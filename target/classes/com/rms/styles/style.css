@@ -1,0 +1,206 @@
+
+#loginPaneRight{
+	-fx-background-image:url("img_1.png");
+	-fx-background-repeat:no-repeat;
+	-fx-width: 100px ;
+	-fx-height: 100px ;
+    -fx-background-position: center center;
+    -fx-background-size : stretch;
+}
+
+.roots{
+	-fx-background-image:url("bg5.jpg") ;
+	-fx-background-repeat: stretch ;
+    -fx-background-size: cover ;
+    -fx-background-position: center center ;
+}
+
+.homeRestaurateur{
+	-fx-background-image:url("bg-hr.png") ;
+    -fx-background-repeat:no-repeat;
+    -fx-width: 100px ;
+    -fx-height: 100px ;
+    -fx-background-position: center center;
+    -fx-background-size : stretch;
+}
+.listProduit{
+	-fx-background-image:url("bg-lr.png") ;
+}
+.bg-r{
+	-fx-background-color: RED;
+	-fx-text-fill: RED;
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+    -fx-border-style: solid;
+}
+.restauranteur{
+	-fx-background-image:url("rest1.png") ;
+    -fx-background-repeat:no-repeat;
+    -fx-width: 100px ;
+    -fx-height: 100px ;
+    -fx-background-position: center center;
+    -fx-background-size : stretch;
+}
+.chef{
+	-fx-background-image:url("chef.png") ;
+    -fx-background-repeat: no-repeat ;
+    -fx-background-size: cover ;
+    -fx-background-position: center center ;
+}
+.TestRed{
+	
+	-fx-background-color: RED;
+	-fx-text-fill: RED;
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+    -fx-border-style: solid;
+    
+}
+
+
+.bg9{
+	-fx-background-image:url("bg9.png") ;
+    -fx-background-repeat:no-repeat;
+    -fx-background-position: center center;
+    -fx-background-size : stretch;
+}
+
+/* styles.css */
+
+/* Bouton par défaut */
+.btn {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #fff;
+    -fx-padding: 8px 8px;
+    -fx-font-size: 10px;
+    -fx-border: none;
+    -fx-cursor: hand;
+    /* Ajoutez d'autres propriétés de style si nécessaire */
+}
+
+/* Bouton de couleur primaire */
+.btn-primary {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #007bff;
+}
+
+/* Bouton de couleur secondaire */
+.btn-secondary {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #6c757d;
+}
+
+/* Bouton de succès */
+.btn-success {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #28a745;
+}
+
+/* Bouton d'avertissement */
+.btn-warning {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #ffc107;
+}
+
+/* Bouton de danger */
+.btn-danger {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #dc3545;
+}
+
+/* Bouton d'information */
+.btn-info {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #17a2b8;
+}
+
+/* Bouton léger */
+.btn-light {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #f8f9fa;
+}
+
+/* Bouton foncé */
+.btn-dark {
+    /* Réutilisez les propriétés de style de .btn et ajoutez/modifiez si nécessaire */
+    -fx-background-color: #343a40;
+}
+
+
+/* styles.css */
+
+.text-muted {
+    -fx-fill: #6c757d; /* Couleur de texte */
+}
+
+.text-primary {
+    -fx-fill: #007bff; /* Couleur de texte */
+}
+
+.text-success {
+    -fx-fill: #28a745; /* Couleur de texte */
+}
+
+.text-info {
+    -fx-fill: #17a2b8; /* Couleur de texte */
+}
+
+.text-warning {
+    -fx-fill: #ffc107; /* Couleur de texte */
+}
+
+.text-danger {
+    -fx-fill: #dc3545; /* Couleur de texte */
+}
+
+.text-light {
+    -fx-fill: #f8f9fa; /* Couleur de texte */
+}
+
+.text-dark {
+    -fx-fill: #343a40; /* Couleur de texte */
+}
+
+
+/* styles.css */
+
+.bg-primary {
+    -fx-background-color: #007bff; /* Couleur de fond */
+}
+
+.bg-secondary {
+    -fx-background-color: #6c757d; /* Couleur de fond */
+}
+
+.bg-success {
+    -fx-background-color: #28a745; /* Couleur de fond */
+}
+
+.bg-info {
+    -fx-background-color: #17a2b8; /* Couleur de fond */
+}
+
+.bg-warning {
+    -fx-background-color: #ffc107; /* Couleur de fond */
+}
+
+.bg-danger {
+    -fx-background-color: #dc3545; /* Couleur de fond */
+}
+
+.bg-light {
+    -fx-background-color: #f8f9fa; /* Couleur de fond */
+}
+
+.bg-dark {
+    -fx-background-color: #343a40; /* Couleur de fond */
+}
+
+.bg-white {
+    -fx-background-color: #fff; /* Couleur de fond */
+}
+
+.bg-transparent {
+    -fx-background-color: transparent; /* Couleur de fond */
+}
+
